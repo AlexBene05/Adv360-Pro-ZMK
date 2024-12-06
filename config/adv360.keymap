@@ -39,41 +39,21 @@
 
         default_layer {
             bindings = <
-  &none   &none   &none   &none        &none   &none                     &tog 4                                                                    &mo 5   &none         &none        &none    &none   &none   &none
-  &none   &kp Q   &kp W   &kp F        &kp P   &kp B                      &none                                                                    &none   &kp J         &kp L        &kp U    &kp Y   &none   &none
-  &none   &kp A   &kp R   &kp S  &mt LSHFT T   &kp G                      &none        &none   &none                   &none      &none            &none   &kp M  &mt RSHIFT N  &mt RCTRL E    &kp I   &kp O   &none
-  &none   &kp Z   &kp X   &kp C        &kp D   &kp V                                           &none                   &none                               &kp K         &kp H    &kp COMMA  &kp DOT   &none   &none
-  &none   &none   &none   &none        &none                    &mt LSHFT SPACE  &lt 1 ENTER   &none                   &none  &lt 3 DEL  &lt 2 BACKSPACE                 &none        &none    &none   &none   &none
-            >;
-        };
-
-        layer_EXT {
-            bindings = <
- &kp F1    &kp F2    &kp F3           &kp F4          &kp F5        &kp F6            &none                                                   &none  &kp F7       &kp F8    &kp F9    &kp F10  &kp F11  &kp F12
-  &none     &none     &none         &kp CAPS         &kp ESC         &none            &none                                                   &none   &none  &kp PAGE_UP    &kp UP   &kp HOME    &none    &none
-  &none  &sk LGUI  &sk LALT        &sk LCTRL  &sk LEFT_SHIFT  &macro_hyper            &none   &none   &none                   &none   &none   &none   &none     &kp LEFT  &kp DOWN  &kp RIGHT    &none    &none
-  &none     &none   &kp INS  &kp PRINTSCREEN         &kp TAB         &none                            &none                   &none                   &none    &kp PG_DN     &none    &kp END    &none    &none
-  &none     &none     &none            &none           &none                          &none  &trans   &none                   &none   &none   &none                &none     &none      &none    &none    &none
-            >;
-        };
-
-        layer_NUM {
-            bindings = <
-  &none         &none         &none         &none   &none         &none            &none                                                   &none         &none         &none         &none         &none         &none   &none
-  &none         &none         &none         &none   &none         &none            &none                                                   &none         &none         &none         &none         &none         &none   &none
-  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp NUMBER_5            &none   &none   &none                   &none   &none   &none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &none
-  &none         &none         &none         &none   &none         &none                            &none                   &none                         &none         &none         &none         &none         &none   &none
-  &none         &none         &none         &none   &none                          &none   &none   &none                   &none   &none  &trans                       &none         &none         &none         &none   &none
+  &none   &none   &none   &none   &none   &none               &tog 2                                                               &tog 3   &none   &none      &none    &none      &none   &none
+  &none   &kp Q   &kp W   &kp E   &kp R   &kp T                &none                                                                &none   &kp Y   &kp U      &kp I    &kp O      &kp P   &none
+  &none   &kp A   &kp S   &kp D   &kp F   &kp G                &none      &none      &none                   &none   &none          &none   &kp H   &kp J      &kp K    &kp I   &kp SEMI   &none
+  &none   &kp Z   &kp X   &kp C   &kp V   &kp B                                      &none                   &none                          &kp N   &kp M  &kp COMMA  &kp DOT  &kp SLASH   &none
+  &none   &none   &none   &none   &none                    &kp SPACE  &kp ENTER  &sk LSHFT                   &sl 4   &sl 1  &kp BACKSPACE           &none      &none    &none      &none   &none
             >;
         };
 
         layer_SYM {
             bindings = <
-  &none             &none          &none             &none              &none        &none            &none                                                   &none          &none       &none                 &none                  &none          &none   &none
-  &none  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES        &none            &none                                                   &none      &kp TILDE      &kp AT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp EXCL   &none
-  &none         &kp COLON      &kp MINUS          &kp PLUS          &kp EQUAL     &kp HASH            &none   &none   &none                   &none   &none   &none  &kp AMPERSAND   &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON   &none
-  &none         &kp CARET       &kp FSLH          &kp STAR      &kp BACKSLASH  &kp PERCENT                            &none                   &none                       &kp PIPE  &kp DOLLAR        &kp LEFT_BRACE      &kp RIGHT_BRACKET   &kp QUESTION   &none
-  &none             &none          &none             &none              &none                         &none   &none   &none                   &none  &trans   &none                      &none                 &none                  &none          &none   &none
+  &none             &none              &none         &none         &none          &none              &none                                                               &none         &none          &none         &none                 &none                  &none   &none
+  &none          &kp EXCL             &kp AT      &kp HASH    &kp DOLLAR      &kp PRCNT              &none                                                               &none     &kp CARET  &kp AMPERSAND      &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &none
+  &none      &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5              &none  &sk LEFT_WIN     &sk RSHFT                   &none   &none   &none  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0   &none
+  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp PLUS     &kp MINUS  &kp BACKSLASH                                   &sk LEFT_ALT                   &none                      &kp PIPE      &kp UNDER     &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE   &none
+  &none             &none              &none         &none         &none                           &kp ESC       &kp TAB     &sk LCTRL                   &none   &none   &none                        &none         &none                 &none                  &none   &none
             >;
         };
 
@@ -94,6 +74,16 @@
   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none   &none   &none                   &none   &none        &none   &none  &bl BL_ON  &bl BL_DEC  &bl BL_OFF   &none   &none
   &none         &none         &none         &none         &none         &none                                  &none                   &none                        &none      &none       &none       &none   &none   &none
   &none         &none         &none         &none         &none                                &none   &none   &none                   &none   &none        &none              &none       &none       &none   &none   &none
+            >;
+        };
+
+        layer_NAV {
+            bindings = <
+  &none   &none   &none   &none   &none   &none            &none                                                   &none     &none     &none   &none      &none   &none   &none
+  &none   &none   &none   &none   &none   &none            &none                                                   &none     &none     &none   &none      &none   &none   &none
+  &none   &none   &none   &none   &none   &none            &none   &none   &none                   &none   &none   &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT   &none   &none
+  &none   &none   &none   &none   &none   &none                            &none                   &none                     &none     &none   &none      &none   &none   &none
+  &none   &none   &none   &none   &none                    &none   &none   &none                   &none   &none   &none               &none   &none      &none   &none   &none
             >;
         };
 
