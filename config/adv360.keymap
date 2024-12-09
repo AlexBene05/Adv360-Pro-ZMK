@@ -24,6 +24,7 @@
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
         label = "HOMEROW_MODS";
         tapping-term-ms = <200>;
         quick_tap_ms = <175>;
